@@ -6,9 +6,7 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-          dolores numquam iusto Ratione earum ducimus autem id iure pariatur
-          dolorum quae maiores.
+          Motivated and detail-oriented Computer Science Engineering student specializing in Full Stack Development. Skilled in building responsive and interactive web applications using modern front-end technologies. Passionate about developing user-friendly digital experiences and continuously learning new technologies to improve technical and problem-solving abilities.
         </p>
       </div>
     </div>
