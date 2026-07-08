@@ -13,7 +13,8 @@ const projects = [
     tools: "HTML, CSS, ReactJS, JavaScript",
     description: "Developed a responsive website for a café client in Hyderabad. Built visually appealing front-end components and improved overall design responsiveness.",
     image: "/images/aaromale.png",
-    url: "#"
+    url: "https://aesthetic-sanctuary.preview.emergentagent.com/",
+    demoUrl: "https://aesthetic-sanctuary.preview.emergentagent.com/"
   },
   {
     title: "Universal Electronic",
@@ -21,7 +22,8 @@ const projects = [
     tools: "HTML, CSS, JavaScript, Responsive Design",
     description: "Designed and built an interactive electronic product showcase and catalog platform. Features high responsiveness, intuitive product grids, and optimized mobile layouts.",
     image: "/images/universal_electronic.png",
-    url: "https://github.com/anuragbontha2507-cyber/universal-electronic-"
+    url: "https://github.com/anuragbontha2507-cyber/universal-electronic-",
+    demoUrl: "https://anuragbontha2507-cyber.github.io/universal-electronic-/"
   },
   {
     title: "AI Lead Qualification",
@@ -29,7 +31,8 @@ const projects = [
     tools: "Python, AI Models, Data Processing",
     description: "Built an intelligent qualification platform leveraging machine learning models. Automates parsing, scoring, validation, and profiling of customer leads.",
     image: "/images/ai_lead.png",
-    url: "https://github.com/anuragbontha2507-cyber/ai-lead-qualification-system"
+    url: "https://github.com/anuragbontha2507-cyber/ai-lead-qualification-system",
+    demoUrl: "https://ai-lead-qualification-system-alpha.vercel.app/"
   }
 ];
 
@@ -105,7 +108,7 @@ const Work = () => {
                   {project.description}
                 </p>
               </div>
-              <WorkImage image={project.image} alt={project.title} />
+              <WorkImage image={project.image} alt={project.title} link={project.url} demoUrl={project.demoUrl} />
             </div>
           ))}
         </div>

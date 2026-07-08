@@ -6,6 +6,7 @@ interface Props {
   alt?: string;
   video?: string;
   link?: string;
+  demoUrl?: string;
 }
 
 const WorkImage = (props: Props) => {
@@ -31,12 +32,24 @@ const WorkImage = (props: Props) => {
         target="_blank"
         data-cursor={"disable"}
       >
-        {props.link && (
+        {props.link && props.link !== "#" && (
           <div className="work-link">
             <MdArrowOutward />
           </div>
         )}
-        <img src={props.image} alt={props.alt} />
+        
+        {props.demoUrl ? (
+          <div className="iframe-wrapper">
+            <iframe 
+              src={props.demoUrl} 
+              title={props.alt}
+              loading="lazy"
+            />
+          </div>
+        ) : (
+          <img src={props.image} alt={props.alt} />
+        )}
+        
         {isVideo && <video src={video} autoPlay muted playsInline loop></video>}
       </a>
     </div>
